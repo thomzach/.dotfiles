@@ -22,3 +22,6 @@ dots checkout
 ```
 dots config --local status.showUntrackedFiles no
 ```
+```
+ln -sf $HOME/.config/zsh/.zshrc $HOME/.zshrc
+```
