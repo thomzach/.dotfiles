@@ -1,0 +1,12 @@
+[credential]
+	helper = store
+[user]
+	email = zach.thomas1.zt@gmail.com
+	name = Zach Thomas
+[core]
+	editor = nvim
+	autocrlf = false
+	whitespace = cr-at-eol
+	excludesFile = ~/.gitignore
+[init]
+	defaultBranch = main

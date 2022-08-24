@@ -1,0 +1,30 @@
+alias ls='exa'
+alias ll='exa -al'
+alias la='exa -a'
+alias grep='grep --color=auto'
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias v="nvim"
+alias e="explorer.exe ."
+
+alias doc="cd /mnt/c/Users/Work/Documents/"
+alias docgit="cd /mnt/c/Users/Work/Documents/git"
+
+alias g="git"
+alias gs="git status"
+alias cmd="cmd.exe /c"
+alias p="powershell.exe /c"
+alias lg="lazygit"
+
+alias config="nvim \$(wslpath \"C:\Users\Work\AppData\Roaming\alacritty\alacritty.yml\")"
+alias docs="cd /mnt/c/Users/Work/Documents/"
+alias proj="cd \"/mnt/c/Users/Work/Documents/Vermeer/\""
+alias pip3="/usr/bin/pip3"
+alias dev="/home/zach/dev/"
+alias a="tmux attach"
+alias cs="cht.sh"
+alias gmake="/mnt/c/Program\ Files/MATLAB/R2020b/bin/win64/gmake.exe"
