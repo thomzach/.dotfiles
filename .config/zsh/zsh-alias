@@ -6,7 +6,7 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
+alias dots='git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 
 alias v="nvim"
 alias e="explorer.exe ."
