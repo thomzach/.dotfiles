@@ -13,4 +13,4 @@ export PATH=$PATH:/home/zach/go/bin
 export EDITOR=nvim
 export MYVIMRC="$HOME/.config/nvim/"
 [ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
