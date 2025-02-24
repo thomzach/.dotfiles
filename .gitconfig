@@ -4,7 +4,7 @@
 	email = zach.thomas1.zt@gmail.com
 	name = Zach Thomas
 [core]
-	editor = nvim
+	editor = emacsclient -c
 	autocrlf = false
 	whitespace = cr-at-eol
 	excludesFile = ~/.gitignore
