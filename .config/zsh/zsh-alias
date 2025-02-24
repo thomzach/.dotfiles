@@ -8,8 +8,8 @@ alias rm='rm -i'
 
 alias dots='git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 
-alias v="nvim"
-alias e="explorer.exe ."
+alias explore="explorer.exe ."
+alias e="emacsclient -c"
 
 alias doc="cd /mnt/c/Users/Work/Documents/"
 alias docgit="cd /mnt/c/Users/Work/Documents/git"
@@ -18,13 +18,4 @@ alias g="git"
 alias gs="git status"
 alias cmd="cmd.exe /c"
 alias p="powershell.exe /c"
-alias lg="lazygit"
 
-alias config="nvim \$(wslpath \"C:\Users\Work\AppData\Roaming\alacritty\alacritty.yml\")"
-alias docs="cd /mnt/c/Users/Work/Documents/"
-alias proj="cd \"/mnt/c/Users/Work/Documents/Vermeer/\""
-alias pip3="/usr/bin/pip3"
-alias dev="/home/zach/dev/"
-alias a="tmux attach"
-alias cs="cht.sh"
-alias gmake="/mnt/c/Program\ Files/MATLAB/R2020b/bin/win64/gmake.exe"
