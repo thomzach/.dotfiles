@@ -19,3 +19,4 @@ alias gs="git status"
 alias cmd="cmd.exe /c"
 alias p="powershell.exe /c"
 
+alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
