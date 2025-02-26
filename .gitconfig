@@ -1,7 +1,7 @@
 [credential]
 	helper = store
 [user]
-	email = zach.thomas1.zt@gmail.com
+	email = zach.thomas@soaris.com
 	name = Zach Thomas
 [core]
 	editor = emacsclient -c
