@@ -67,13 +67,15 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term
+    bindsym $mod+Return exec emacsclient -c -e '(vterm)'
+    bindsym $mod+e exec emacsclient -c
 
     # Kill focused window
     bindsym $mod+Shift+c kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+x exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -96,10 +98,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # bindsym $mod+$up focus up
     # bindsym $mod+$right focus right
     # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+    bindsym $mod+Ctrl+$left focus left
+    bindsym $mod+Ctrl+$down focus down
+    bindsym $mod+Ctrl+$up focus up
+    bindsym $mod+Ctrl+$right focus right
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
@@ -115,10 +117,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Workspaces:
 #
 
-    bindsym $mod+n workspace number 1
-    bindsym $mod+e workspace number 2
-    bindsym $mod+i workspace number 3
-    bindsym $mod+o workspace number 4
+    # bindsym $mod+n workspace number 1
+    # bindsym $mod+e workspace number 2
+    # bindsym $mod+i workspace number 3
+    # bindsym $mod+o workspace number 4
 
     # Switch to workspace
     bindsym $mod+1 workspace number 1
@@ -218,6 +220,10 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
     bindsym Print exec grim
+
+    bindsym Shift+F9 exec swaymsg output HDMI-A-1 mode 2560x1440@144Hz
+    bindsym Shift+F10 exec swaymsg output HDMI-A-1 mode 3840x2160@60Hz
+
 
 #
 # Status Bar:

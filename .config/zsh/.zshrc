@@ -29,3 +29,9 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/zach/.dart-cli-completion/zsh-config.zsh ]] && . /home/zach/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
