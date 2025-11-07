@@ -242,7 +242,7 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "qs -c ~/.config/quickshell/noctalia-shell"
+spawn-sh-at-startup "qs -c ~/.config/quickshell/noctalia-shell"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -340,6 +340,7 @@ binds {
     Mod+X hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+e { spawn-sh "exec emacsclient -c"; }
+    Mod+Return { spawn-sh "exec emacsclient -c -e '(vterm)'"; }
         // bindsym $mod+Return exec emacsclient -c -e '(vterm)'
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
