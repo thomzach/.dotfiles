@@ -19,7 +19,8 @@ set $term ghostty
 
 
 for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
-set $menu exec foot -a launcher -e /usr/bin/sway-launcher-desktop
+# set $menu exec foot -a launcher -e /usr/bin/sway-launcher-desktop
+set $menu exec fuzzel
 
 
 
@@ -229,18 +230,23 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
+# bar {
+#     position top
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %H:%M'; do sleep 1; done
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while date +'%Y-%m-%d %H:%M'; do sleep 1; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+
+default_border pixel
+
+output HDMI-A-1 scale 1.2
+exec qs -c ~/.config/quickshell/noctalia-shell
 
 include /etc/sway/config.d/*
